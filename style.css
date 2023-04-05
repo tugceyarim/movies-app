@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background-color: lightblue;
+    font-family: 'Koh Santepheap', cursive;
+    margin: 1;
+}
+    header{
+        padding:1rem;
+        margin-top: 20px;
+        margin-left: 20px;
+        display:flex;
+        justify-content: flex-end;
+    }
+    input[type="text"]::placeholder {
+        color: gray;
+    }
+    .search{
+        background: #ffcb3a;
+        border: 16px solid #ffcb3a;
+        padding: 1px ;
+        border-radius: 64px;
+        font-size: 18px;
+        line-height: 32px;
+        color: gray;
+        font-family: inherit;
+    }
+    .search:focus{
+        outline:0;
+    }
+    #main{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 70rem;
+        margin: 0 auto;      
+    }
+    .movie {
+        
+        width: 205px;
+        margin: 17px;
+        border-radius: 64px;
+        background-color: rgb(222, 226, 222);
+        position:relative;
+        overflow: hidden;
+    }
+    .movie img{
+        width:100%;
+    }
+    .movie_info {
+        color: rgb(206, 197, 197);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem 1rem 1rem;
+        letter-spacing: 0.5px;
+    }
+    .movie_info h3 {
+        color: #000;
+        margin: 10px 45px 40px 15px;
+    }
+    .movie_info h4{
+        color: #a34f4f;
+        position: absolute;
+        left: 15%;
+        right: 33%;
+        top: 90%;
+        bottom: 9%;
+        margin: 10px 45px 20px 15px;
+        max-height: 100%;
+    }
+    .movie_info span{
+        position: absolute;
+        left: 75%;
+        right: 5%;
+        top: 75%;
+        bottom: 20%;
+        padding: 0.25rem 0.30rem;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 18px;
+        background: rgb(183, 199, 158);
+        border-radius: 4px;
+    }
+    .movie_info span.green{
+        color: green;
+    }
+    .movie_info span.blue{
+        color: rgb(53, 53, 255);
+    }
+    .movie_info span.red{
+        color: rgb(255, 70, 70);
+    }
